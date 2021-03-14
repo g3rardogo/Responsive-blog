@@ -46,3 +46,7 @@ header .header-icons__container .icons {
     justify-self: end;
     margin-right: 5.0rem;
 }
+
+header .icons span {
+    color: white;
+}
