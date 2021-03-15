@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
 :root {
     --light-green: #47cfac;
 }
 
 body {
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -44,9 +47,65 @@ header .header-icons__container .icons {
     align-items: center;
     justify-content: space-between;
     justify-self: end;
-    margin-right: 5.0rem;
+    margin-right: 50px;
 }
 
 header .icons span {
     color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90px;
+}
+
+nav .nav-logo__container {
+    margin-left: 50px;
+}
+
+nav .nav-logo__container img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 2rem;
+}
+
+nav .profile-link__container a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.home-main__container {
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+}
+
+.home-main__text {
+    align-self: center;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+}
+
+.home-main__button {
+    margin-top: 90px;
+    background-color: var(--light-green);
+    padding: 1.8rem;
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: flex-start;
 }
