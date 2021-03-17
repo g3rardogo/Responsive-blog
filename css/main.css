@@ -186,6 +186,10 @@ nav .profile-link__container a {
     margin-bottom: 35px;
 }
 
+.blogs-posts__container .post__container img {
+    width: 100%;
+}
+
 .blogpost-image__container {
     padding: 0 50px 40px;
 }
